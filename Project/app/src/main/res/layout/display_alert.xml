@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff202">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert!"
+        android:id="@+id/textView2"
+        android:textSize="50dp"
+        android:background="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have not checked-in.  A message has been sent your contact."
+        android:id="@+id/textView5"
+        android:textSize="40dp"
+        android:textColor="#ff0000"
+        android:layout_margin="10dp" />
+
+</LinearLayout>

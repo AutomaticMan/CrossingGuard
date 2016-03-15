@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#fff202">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a check-in time:"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 minutes"
+        android:id="@+id/timeDisplay"
+        android:textSize="25dp"
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:paddingLeft="10dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeSelect"
+        android:progress="0"
+        android:paddingTop="10dp"
+        android:paddingBottom="50dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:onClick="HandleTimeChange" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Contact email:"
+        android:id="@+id/textView4"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:textColor="#ff0000" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:background="#ffffff"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:text="user@email.com" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SET ALARM"
+        android:id="@+id/btnSetAlarm"
+        android:textSize="50dp"
+        android:onClick="HandleSetAlarm"
+        android:background="#2f00ff"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:id="@+id/btnBack"
+        android:textSize="50dp"
+        android:onClick="HandleBack"
+        android:background="#2f00ff"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

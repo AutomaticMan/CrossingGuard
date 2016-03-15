@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff202"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLEASE CHECK-IN:"
+        android:id="@+id/textView3"
+        android:textSize="40dp"
+        android:paddingTop="100dp"
+        android:paddingBottom="50dp"
+        android:textColor="#ff0000"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check-In"
+        android:id="@+id/btnCheckIn"
+        android:textSize="40dp"
+        android:onClick="HandleCheckIn"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:layout_weight="0.14" />
+</LinearLayout>

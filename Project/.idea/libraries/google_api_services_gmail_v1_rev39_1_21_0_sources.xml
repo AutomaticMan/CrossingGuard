@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="google-api-services-gmail-v1-rev39-1.21.0-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/google-api-services-gmail-v1-rev39-1.21.0-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
