@@ -6,19 +6,22 @@
     android:background="#fff202">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select a check-in time:"
-        android:id="@+id/textView"
-        android:textSize="30dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp"
-        android:textColor="#ff0000" />
+        android:padding="6dip">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="Select a check-in time:"
+            android:id="@+id/textView"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.12"
+            android:textSize="30dp"
+            android:textColor="#ff0000" />
+
+    </LinearLayout>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,6 +66,26 @@
         android:padding="10dp"
         android:text="user@email.com" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Check Out Description:"
+        android:id="@+id/checkOutTextLabel"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:textColor="#ff0000" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/checkOutText"
+        android:background="#ffffff"
+        android:textSize="25dp"
+        android:padding="10dp" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,18 +96,5 @@
         android:background="#2f00ff"
         android:textColor="#ffffff"
         android:layout_margin="10dp" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="BACK"
-        android:id="@+id/btnBack"
-        android:textSize="50dp"
-        android:onClick="HandleBack"
-        android:background="#2f00ff"
-        android:textColor="#ffffff"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp" />
 
 </LinearLayout>

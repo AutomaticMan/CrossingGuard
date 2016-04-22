@@ -32,7 +32,7 @@ public class DisplayAlert extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display_alert);
 
-        Mail m = new Mail("s-gardiner@cox.net", "barrett68");
+        /*Mail m = new Mail("s-gardiner@cox.net", "barrett68");
 
         String[] toArr = {email};
         String user = getUsername();
@@ -54,7 +54,7 @@ public class DisplayAlert extends Activity {
         }
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();*/
 
     }
 
@@ -83,7 +83,7 @@ public class DisplayAlert extends Activity {
         return null;
     }
 
-    @Override
+    /*@Override
     public void onStart() {
         super.onStart();
 
@@ -121,5 +121,5 @@ public class DisplayAlert extends Activity {
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
-    }
+    }*/
 }

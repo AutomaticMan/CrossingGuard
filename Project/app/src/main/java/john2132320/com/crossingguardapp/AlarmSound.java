@@ -9,6 +9,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
@@ -20,6 +21,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Calendar;
 
 
@@ -32,12 +34,14 @@ public class AlarmSound extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent u = getIntent();
+        MainActivity j = (MainActivity)u.getSerializableExtra("parent");
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.alert_set);
 
         Calendar t = Calendar.getInstance();
-        t.add(Calendar.SECOND, 5);
+        t.add(Calendar.SECOND, 15);
 
         Intent i = new Intent(this, DisplayAlert.class);
         pending = PendingIntent.getActivity(this,1235, i, PendingIntent.FLAG_CANCEL_CURRENT);
@@ -93,5 +97,36 @@ public class AlarmSound extends Activity {
         return alertSound;
 
     }
+
+    /*public void checkItem(final CheckIn item) {
+        if (mClient == null) {
+            return;
+        }
+
+        // Set the item as completed and update it in the table
+        //item.setComplete(true);
+
+        AsyncTask<Void, Void, Void> task = new AsyncTask<Void, Void, Void>(){
+            @Override
+            protected Void doInBackground(Void... params) {
+                try {
+
+                    mCheckInTable.update(item).get();
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            mAdapter.remove(item);
+                        }
+                    });
+                } catch (final Exception e) {
+                    createAndShowDialogFromTask(e, "Error");
+                }
+
+                return null;
+            }
+        };
+
+        runAsyncTask(task);
+    }*/
 
 }

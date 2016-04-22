@@ -4,8 +4,6 @@
       <root url="jar://$PROJECT_DIR$/app/libs/google-api-services-gmail-v1-rev39-1.21.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/app/libs/google-api-services-gmail-v1-rev39-1.21.0-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
